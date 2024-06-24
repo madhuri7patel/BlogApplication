@@ -7,6 +7,7 @@ const CreateBlogPostPage = ({ onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newPost = { title, content };
+    //console.log("title")
   
     fetch("https://api.example.com/posts", {
       method: "POST",
